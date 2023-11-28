@@ -1,0 +1,36 @@
+
+body {
+    background-color:  RGB(30,144,255);
+    font-family: "Garamond";
+    color:white;
+
+}
+
+
+.left {
+    text-align: center;
+     height: 200px;
+  width: 25%;
+  float: left;
+  }
+  .center {
+    text-align: center;
+    height: 200px;
+  width: 50%;
+  float: left;
+  }
+
+
+  #glowny
+  {
+    color: RGB(0,0,128);
+  clear: both;
+  }
+#stopka{
+    float: left;
+}
+#tablica {
+
+    width: 100%;
+}
+

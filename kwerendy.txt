@@ -1,0 +1,12 @@
+Zad 1.
+SELECT czas, kierunek, nr_rejsu, status_lotu FROM przyloty ORDER BY czas asc
+
+Zad 2.
+SELECT count(czas) as ilosc_przylotow FROM przyloty WHERE czas BETWEEN "10:00" AND "10:59"
+
+Zad 3.
+SELECT kierunek, przyloty.nr_rejsu, samoloty.typ FROM przyloty, samoloty WHERE samoloty.id=przyloty.samoloty_id AND kierunek LIKE "Warszawa"
+SELECT kierunek, przyloty.nr_rejsu, samoloty.typ FROM przyloty INNER JOIN samoloty on samoloty.id=przyloty.samoloty_id WHERE kierunek LIKE "Warszawa"
+
+Zad4.
+UPDATE `odloty` SET `status_lotu`="opoznienie 20 min" WHERE nr_rejsu = "LX5673"
